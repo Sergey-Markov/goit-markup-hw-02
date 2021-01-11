@@ -102,3 +102,24 @@ h4 {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+/* Portfolio */
+
+/* filters */
+.filters {
+  background: #f5f4fa;
+}
+.filters:hover,
+.filters:focus {
+  background: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Примеры работ */
+.examples {
+  text-decoration: none;
+}
+.examples-text {
+  color: #212121;
+}
