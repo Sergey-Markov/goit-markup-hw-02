@@ -16,6 +16,10 @@
 body {
   background: var(--main-bg-color);
   color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -26,12 +30,9 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Roboto;
-  font-style: 400;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -39,12 +40,22 @@ h4 {
 .logo-header {
   color: #000000;
   text-decoration: none;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 /* навигация по сайту */
 .link {
   color: var(--main-color);
   text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .logo-in,
 .navigation .link:hover,
@@ -58,6 +69,11 @@ h4 {
 .link-contact {
   color: var(--gray-text);
   text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* hero */
@@ -66,15 +82,45 @@ h4 {
 }
 .hero-h {
   color: var(--white-text);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-button {
   background: #2196f3;
   color: var(--white-text);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 /* характеристика команды */
+.comandspecifications-h {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 .comandspecifications-text {
   color: var(--gray-text);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* workspace */
+.workspace-h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 /* наша команда */
@@ -83,10 +129,24 @@ h4 {
 }
 .ourcomand-h {
   background: var(--main-bg-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.ourcomand-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
 }
 .ourcomand-text {
   background: var(--main-bg-color);
   color: var(--gray-text);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 /* footer */
@@ -96,13 +156,23 @@ h4 {
 .logo-footer {
   color: var(--white-text);
   text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .address {
   color: var(--white-text);
+
+  font-weight: 400l;
+  font-size: 14px;
 }
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* Portfolio */
@@ -110,6 +180,11 @@ h4 {
 /* filters */
 .filters {
   background: #f5f4fa;
+}
+.filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 .filters:hover,
 .filters:focus {
@@ -122,6 +197,15 @@ h4 {
 .examples {
   text-decoration: none;
 }
+.examples-h {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
 .examples-text {
-  color: var(--main-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--gray-text);
 }
