@@ -2,19 +2,24 @@
 
 цвет вторичного текста - color: #757575;
 
-цвет основного фона - background: #FFFFFF;
+цвет основного фона - background-color: #FFFFFF;
 
-цвет акцента - background: #2196F3;
+цвет акцента - background-color: #2196F3;
 цвет акцента - color: #2196F3; */
+
 :root {
   --main-bg-color: #ffffff;
   --main-color: #212121;
   --accent-color: #2196f3;
   --white-text: #ffffff;
   --gray-text: #757575;
+
+  /* текстовые характеристики */
+  --bold-weight: 700;
+  --normal-weight: 400;
 }
 body {
-  background: var(--main-bg-color);
+  background-color: var(--main-bg-color);
   color: var(--main-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -32,7 +37,7 @@ body {
   text-decoration: none;
 
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: var(--bold-weight);
   font-size: 26px;
   line-height: 1.19;
 }
@@ -68,7 +73,7 @@ body {
 
 /* hero */
 .hero {
-  background: #2f303a;
+  background-color: #2f303a;
 }
 .hero-h {
   color: var(--white-text);
@@ -81,10 +86,10 @@ body {
   text-transform: uppercase;
 }
 .hero-button {
-  background: #2196f3;
+  background-color: #2196f3;
   color: var(--white-text);
 
-  font-weight: 700;
+  font-weight: var(--bold-weight);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -92,7 +97,7 @@ body {
 
 /* характеристика команды */
 .comandspecifications-h {
-  font-weight: 700;
+  font-weight: var(--bold-weight);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -100,14 +105,14 @@ body {
 .comandspecifications-text {
   color: var(--gray-text);
 
-  font-weight: 400;
+  font-weight: var(--normal-weight);
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* workspace */
 .workspace-h {
-  font-weight: 700;
+  font-weight: var(--bold-weight);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -115,15 +120,16 @@ body {
 
 /* наша команда */
 .ourcomand {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 .ourcomand-h {
-  background: var(--main-bg-color);
-
-  font-weight: 700;
+  font-weight: var(--bold-weight);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+.ourcomand-cards {
+  background-color: var(--main-bg-color);
 }
 .ourcomand-name {
   font-weight: 500;
@@ -131,37 +137,36 @@ body {
   line-height: 1.18;
 }
 .ourcomand-text {
-  background: var(--main-bg-color);
   color: var(--gray-text);
 
-  font-weight: 400;
+  font-weight: var(--normal-weight);
   font-size: 16px;
   line-height: 1.18;
 }
 
 /* footer */
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
 }
 .logo-footer {
   color: var(--white-text);
   text-decoration: none;
 
-  font-weight: 700;
+  font-weight: var(--bold-weight);
   font-size: 26px;
   line-height: 1.19;
 }
 .address {
   color: var(--white-text);
 
-  font-weight: 400l;
+  font-weight: var(--normal-weight);
   font-size: 14px;
 }
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 
-  font-weight: 400;
+  font-weight: var(--normal-weight);
   font-size: 14px;
 }
 
@@ -169,7 +174,7 @@ body {
 
 /* filters */
 .filters {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 .filters {
   font-weight: 500;
@@ -178,7 +183,7 @@ body {
 }
 .filters:hover,
 .filters:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--white-text);
   cursor: pointer;
 }
@@ -189,13 +194,13 @@ body {
 }
 .examples-h {
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: var(--bold-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .examples-text {
-  font-weight: 400;
+  font-weight: var(--normal-weight);
   font-size: 16px;
   line-height: 1.87;
   color: var(--gray-text);
