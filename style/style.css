@@ -6,10 +6,16 @@
 
 цвет акцента - background: #2196F3;
 цвет акцента - color: #2196F3; */
-
+:root {
+  --main-bg-color: #ffffff;
+  --main-color: #212121;
+  --accent-color: #2196f3;
+  --white-text: #ffffff;
+  --gray-text: #757575;
+}
 body {
-  background: #ffffff;
-  color: #212121;
+  background: var(--main-bg-color);
+  color: var(--main-color);
 }
 
 .list {
@@ -24,7 +30,7 @@ h4 {
   font-style: 400;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -34,28 +40,24 @@ h4 {
   color: #000000;
   text-decoration: none;
 }
-.logo-in {
-  color: #2196f3;
-}
 
 /* навигация по сайту */
 .link {
-  color: #212121;
+  color: var(--main-color);
   text-decoration: none;
 }
+.logo-in,
 .navigation .link:hover,
-.navigation .link:focus {
-  color: #2196f3;
+.navigation .link:focus,
+.contact .link-contact:hover,
+.contact .link-contact:focus {
+  color: var(--accent-color);
 }
 
 /* контактная информация хедер*/
 .link-contact {
-  color: #757575;
+  color: var(--gray-text);
   text-decoration: none;
-}
-.contact .link-contact:hover,
-.contact .link-contact:focus {
-  color: #2196f3;
 }
 
 /* hero */
@@ -63,16 +65,16 @@ h4 {
   background: #2f303a;
 }
 .hero-h {
-  color: #ffffff;
+  color: var(--white-text);
 }
 .hero-button {
   background: #2196f3;
-  color: #ffffff;
+  color: var(--white-text);
 }
 
 /* характеристика команды */
 .comandspecifications-text {
-  color: #757575;
+  color: var(--gray-text);
 }
 
 /* наша команда */
@@ -80,11 +82,11 @@ h4 {
   background: #f5f4fa;
 }
 .ourcomand-h {
-  background: #ffffff;
+  background: var(--main-bg-color);
 }
 .ourcomand-text {
-  background: #ffffff;
-  color: #757575;
+  background: var(--main-bg-color);
+  color: var(--gray-text);
 }
 
 /* footer */
@@ -92,11 +94,11 @@ h4 {
   background: #2f303a;
 }
 .logo-footer {
-  color: #ffffff;
+  color: var(--white-text);
   text-decoration: none;
 }
 .address {
-  color: #ffffff;
+  color: var(--white-text);
 }
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
@@ -111,8 +113,8 @@ h4 {
 }
 .filters:hover,
 .filters:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--accent-color);
+  color: var(--white-text);
   cursor: pointer;
 }
 
@@ -121,5 +123,5 @@ h4 {
   text-decoration: none;
 }
 .examples-text {
-  color: #212121;
+  color: var(--main-color);
 }
