@@ -26,16 +26,6 @@ body {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  color: #212121;
-}
-
 /* логотип */
 .logo-header {
   color: #000000;
@@ -198,6 +188,7 @@ h4 {
   text-decoration: none;
 }
 .examples-h {
+  color: var(--main-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
