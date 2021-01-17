@@ -20,6 +20,9 @@
   --button-bgc: #2196f3;
   --filters-bgc: #f5f4fa;
   --ourcomand-bgc: #f5f4fa;
+  --hero-bgc: #2f303a;
+  --footer-contact-bgc: rgba(255, 255, 255, 0.6);
+  --footer-bgc: #2f303a;
 
   /* текстовые характеристики */
   --bold-weight: 700;
@@ -41,14 +44,15 @@ body {
 }
 
 /* логотип */
-.logo-header {
-  color: var(--black-color-logo);
+.logo {
   text-decoration: none;
-
   font-family: "Raleway", sans-serif;
   font-weight: var(--bold-weight);
   font-size: 26px;
   line-height: 1.19;
+}
+.logo-header {
+  color: var(--black-color-logo);
 }
 
 /* навигация по сайту */
@@ -82,7 +86,7 @@ body {
 
 /* hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-bgc);
 }
 .hero-h {
   color: var(--white-text);
@@ -155,15 +159,10 @@ body {
 
 /* footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-bgc);
 }
 .logo-footer {
   color: var(--white-text);
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: var(--bold-weight);
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .address {
@@ -173,7 +172,7 @@ body {
   font-size: 14px;
 }
 .footer-contact {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-bgc);
   text-decoration: none;
 
   font-style: normal;
@@ -216,6 +215,6 @@ body {
   line-height: 1.87;
   color: var(--gray-text);
 }
-.accent {
+.current {
   color: var(--accent-color);
 }
